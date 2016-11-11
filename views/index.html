@@ -1,4 +1,4 @@
- 
+$def with(data)
 <html lang="es">
 
 <head>
@@ -16,11 +16,13 @@
             <tr>
                 <th style="border:1px solid black">Estado</th>
                 <th style="border:1px solid black">Dirección</th>
-            </tr> 
-            <tr>
-                <td style="width:300px; border:1px solid black "> HI</td>
-                <td style="width:300px; border:1px solid black ">HO</td>
             </tr>
+            $for row in data: 
+                $if 'FARMACIA GUADALAJARA' == row['cadenaComercial']:
+                    <tr >
+                        <td style="width:300px; border:1px solid black "> $row['estado']</td>
+                        <td style="width:300px; border:1px solid black ">$row['direccion']</td>
+                    </tr> 
         </table>
 </body>
 
