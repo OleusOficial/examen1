@@ -1,1 +1,1 @@
-[web: python app.py $PORT]
+[web: python-3.5.2 app.py $PORT]
