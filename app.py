@@ -3,7 +3,7 @@ import json
 
 
 render = web.template.render('views/')
-urls = ('/index(.*)', 'index')
+urls = ('/(.*)', 'index')
 
 class index:
     def GET(self, data):
